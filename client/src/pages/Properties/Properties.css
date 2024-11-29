@@ -1,0 +1,80 @@
+.properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 cards in a row, responsive */
+    gap: 20px; /* Spacing between the cards */
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .property-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .property-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .property-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .property-info {
+    padding: 10px;
+  }
+  
+  .property-price {
+    color: #4066ff;
+    font-weight: bold;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .payment-options {
+    margin-top: 20px;
+  }
+  
+  .book-now-button,
+  .close-popup {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4066ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-popup {
+    background-color: #ccc;
+  }
+  
+  .book-now-button:hover,
+  .close-popup:hover {
+    background-color: #304fcc;
+  }
+  
